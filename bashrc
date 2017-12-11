@@ -127,3 +127,8 @@ export PATH="/home/philipp/anaconda3/bin:$PATH"
 
 # add path to ~/bin to enable dmenu to find applications
 export PATH=${PATH}:"/home/philipp/bin"
+
+# function to change directory and list files
+function cdl {
+	builtin cd "$@" && ls -a
+}
