@@ -160,6 +160,24 @@ programming.
   (add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode)
 #+END_SRC
 
+** Add the treemacs file viewer
+
+Default settings taken directly from github
+#+BEGIN_SRC emacs-listp
+  (use-package treemacs
+    :ensure t
+    :defer t
+    :config
+    :bind
+    (:map global-map
+      ([f8]    . treemacs toggle)
+      ("M-0"   . treemacs-select-window)
+      ("C-c 1" . treemeacs-delete-other-windows)
+      ("M-m ft". treemacs-toggle)
+      ("M-m fT". treemacs)
+      ("M-m fB". treemacs-bookmark)
+      ("M-m f C-t" . treemacs-find-file)
+      ("M-m f M-t" . treemacs-find-tag)))
 * Programming customizations
 
 I like shallow indentation, but tabs are displayed as 8 characters by default.

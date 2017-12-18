@@ -25,7 +25,7 @@
 		("/home/philipp/org/thesis.org" "/home/philipp/org/archive.org" "/home/philipp/org/todo.org")))
  '(package-selected-packages
 	 (quote
-		(treemacs diff-hl org-bullets adaptive-wrap ## auctex))))
+		(yasnippet treemacs diff-hl org-bullets adaptive-wrap ## auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -44,6 +44,9 @@
 (require 'reftex)
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
 (add-hook 'latex-mode-hook 'turn-on-reftex)   ; with Emacs latex mode
+
+;; Enable auto-fill-mode in LaTex files
+(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 
 ;; Integrate RefTeX with AUCTeX
 (setq reftex-plug-into-AUCTeX t)
@@ -77,3 +80,14 @@
 (setq TeX-view-program-selection '((output-pdf "Evince")))
 (add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
 (setq TeX-source-correlate-start-server t)
+
+
+;; Set key for treemacs
+(global-set-key (kbd "C-c 0") 'treemacs-toggle)
+
+;; Enable autocite
+(eval-after-load 'reftex-vars
+  '(progn
+     ;; (also some other reftex-related customizations)
+     (setq reftex-cite-format
+           '((?c . "\\autocite{%l}")))))

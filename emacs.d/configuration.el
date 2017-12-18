@@ -85,12 +85,21 @@ other, future frames."
 (add-hook 'prog-mode-hook 'turn-on-diff-hl-mode)
 (add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode)
 
+(require 'treemacs)
+
+(setq-default tab-width 2)
+
 (setq python-indent 2)
 
 (add-hook 'sh-mode-hook
           (lambda ()
             (setq sh-basic-offset 2
                   sh-indentation 2)))
+
+;;(eval-after-load 'reftex-vars
+;;  '(progn
+  ;;   (setq reftex-cite-format
+;;  '((?c . "\\autocite{%l}")))))
 
 (require 'org-bullets)
         (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))

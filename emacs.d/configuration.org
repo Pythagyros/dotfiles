@@ -162,22 +162,10 @@ programming.
 
 ** Add the treemacs file viewer
 
-Default settings taken directly from github
-#+BEGIN_SRC emacs-listp
-  (use-package treemacs
-    :ensure t
-    :defer t
-    :config
-    :bind
-    (:map global-map
-      ([f8]    . treemacs toggle)
-      ("M-0"   . treemacs-select-window)
-      ("C-c 1" . treemeacs-delete-other-windows)
-      ("M-m ft". treemacs-toggle)
-      ("M-m fT". treemacs)
-      ("M-m fB". treemacs-bookmark)
-      ("M-m f C-t" . treemacs-find-file)
-      ("M-m f M-t" . treemacs-find-tag)))
+Some settings that i hope will work
+#+BEGIN_SRC emacs-lisp
+(require 'treemacs)
+#+END_SRC
 * Programming customizations
 
 I like shallow indentation, but tabs are displayed as 8 characters by default.
@@ -205,6 +193,22 @@ Indent with 2 spaces.
               (setq sh-basic-offset 2
                     sh-indentation 2)))
 #+END_SRC
+
+* LaTeX customizations
+
+** Change default \cite to \autocite
+
+Adapted from a stackexchange post.
+Should replace the default behavior of C-c [ to insert autocite,
+rather than cite.
+
+#+BEGIN_SRC emacs-lisp
+  ;;(eval-after-load 'reftex-vars
+;;  '(progn
+  ;;   (setq reftex-cite-format
+;;  '((?c . "\\autocite{%l}")))))
+#+END_SRC
+
 
 * Publishing and task management with Org-mode
 
