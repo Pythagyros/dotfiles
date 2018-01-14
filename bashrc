@@ -132,3 +132,5 @@ export PATH=${PATH}:"/home/philipp/bin"
 function cdl {
 	builtin cd "$@" && ls -a
 }
+
+# add path to texlive install

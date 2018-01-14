@@ -16,7 +16,7 @@
 (global-prettify-symbols-mode t)
 
 (setq hrs/default-font "Inconsolata")
-(setq hrs/default-font-size 18)
+(setq hrs/default-font-size 16)
 (setq hrs/current-font-size hrs/default-font-size)
 
 (setq hrs/font-change-increment 1.1)
@@ -100,6 +100,26 @@ other, future frames."
 ;;  '(progn
   ;;   (setq reftex-cite-format
 ;;  '((?c . "\\autocite{%l}")))))
+
+(global-visual-line-mode 1) ;;Proper line wrapping
+;(global-hl-line-mode 1) ;;Highlight current row
+;(show-paren-mode 1) ;;Matches parentheses and such in every mode
+;(set-fringe-mode '(0 . 0)) ;;Disable fringe because of visual-line-mode
+;(setq visible-bell t) ;;Flashes on error
+
+(defun run-latexmk ()
+  (interactive)
+  (let ((TeX-save-query nil)
+    (TeX-process-asynchronous nil)
+    (master-file (TeX-master-file)))
+    (TeX-save-document "")
+    (TeX-run-TeX "latexmk"
+      (TeX-command-expand "latexmk %t" 'TeX-master-file) master-file)
+    (if (plist-get TeX-error-report-switches (intern master-file))
+      (TeX-next-error t)
+      (minibuffer-message "latexmk done"))))
+
+(global-set-key (kbd "C-<dead-acute>") 'TeX-next-error)
 
 (require 'org-bullets)
         (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))

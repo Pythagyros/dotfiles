@@ -98,3 +98,8 @@ eval `dircolors ~/.dir_colors/dircolors`
 
 # hide the user@machine prompt from shell
 prompt_context() {} 
+
+# Add Texlive 2017 installation to path
+if [ -d "/usr/local/texlive/2017/bin/x86_64-linux" ] ; then
+  PATH=$PATH:"/usr/local/texlive/2017/bin/86_64-linux"
+fi

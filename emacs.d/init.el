@@ -22,7 +22,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
 	 (quote
-		("/home/philipp/org/thesis.org" "/home/philipp/org/archive.org" "/home/philipp/org/todo.org")))
+		("/home/philipp/org/maybe.org" "/home/philipp/org/archive.org" "/home/philipp/org/in.org" "/home/philipp/org/gewicht.org" "/home/philipp/org/thesis.org" "/home/philipp/org/todo.org" "/home/philipp/org/thesis-draft.org" "/home/philipp/org/waiting.org")))
  '(package-selected-packages
 	 (quote
 		(yasnippet treemacs diff-hl org-bullets adaptive-wrap ## auctex))))

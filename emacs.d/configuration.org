@@ -14,7 +14,6 @@ Use [[https://github.com/hrs/sensible-defaults.el][sensible-defaults.el]] for so
 #+END_SRC
 
 * Set personal information
-
 ** Who am I? Where am I?
 
 #+BEGIN_SRC emacs-lisp
@@ -63,7 +62,7 @@ Note that this overrides the default font-related keybindings from
 
 #+BEGIN_SRC emacs-lisp
   (setq hrs/default-font "Inconsolata")
-  (setq hrs/default-font-size 18)
+  (setq hrs/default-font-size 16)
   (setq hrs/current-font-size hrs/default-font-size)
 
   (setq hrs/font-change-increment 1.1)
@@ -209,9 +208,38 @@ rather than cite.
 ;;  '((?c . "\\autocite{%l}")))))
 #+END_SRC
 
+** Configurations from simpletons guide to emacs-latex
 
+#+BEGIN_SRC emacs-lisp
+(global-visual-line-mode 1) ;;Proper line wrapping
+;(global-hl-line-mode 1) ;;Highlight current row
+;(show-paren-mode 1) ;;Matches parentheses and such in every mode
+;(set-fringe-mode '(0 . 0)) ;;Disable fringe because of visual-line-mode
+;(setq visible-bell t) ;;Flashes on error
+#+END_src
+** Set up latexmk for compilation
+Taken from stackoverflow
+
+#+BEGIN_SRC emacs-lisp
+  (defun run-latexmk ()
+    (interactive)
+    (let ((TeX-save-query nil)
+      (TeX-process-asynchronous nil)
+      (master-file (TeX-master-file)))
+      (TeX-save-document "")
+      (TeX-run-TeX "latexmk"
+        (TeX-command-expand "latexmk %t" 'TeX-master-file) master-file)
+      (if (plist-get TeX-error-report-switches (intern master-file))
+        (TeX-next-error t)
+        (minibuffer-message "latexmk done"))))
+#+END_SRC
+** Changed keybindings for QWERTZ keyboard
+Backticks are not present on QWERTZ, therefore the binding for display-latex-error is changed
+
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-<dead-acute>") 'TeX-next-error)
+#+END_SRC
 * Publishing and task management with Org-mode
-
 ** Display preferences
 
 I like to see an outline of pretty bullets instead of a list of asterisks.
@@ -275,3 +303,4 @@ Bind a few handy keys.
   (define-key global-map "\C-ca" 'org-agenda)
   (define-key global-map "\C-cc" 'org-capture)
 #+END_SRC
+* Startup Stuff

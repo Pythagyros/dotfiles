@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("ion ex"
+ (filename . "~/masterarbeit/chapters/results.tex")
+ (front-context-string . "\\subsection{Ion ")
+ (rear-context-string . "tography (end)\n\n")
+ (position . 10095))
+)
