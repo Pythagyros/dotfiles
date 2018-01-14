@@ -188,7 +188,7 @@ hide_edge_borders both
 #       status_command i3blocks -c ~/.config/i3/i3blocks.conf
 # }
 
-bindsym $mod+shift+l exec i3lock --color "$bg-color"
+bindsym $mod+control+l exec i3lock --color "$bg-color"
 
 # Keybinding for monitor-switching shell script
 
