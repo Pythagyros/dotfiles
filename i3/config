@@ -223,3 +223,12 @@ exec compton -f
 # Enable screen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
+
+## Settings for i3-gaps
+
+# Set gap width in px
+gaps inner 5
+gaps outer 5
+
+# Disable titlebars
+for_window [class="^.*"] border pixel 0
