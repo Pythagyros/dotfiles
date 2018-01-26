@@ -1,0 +1,4 @@
+[
+	{"command": "insert", "args": {"characters": "\\autocite"}},
+	{"command": "latex_fill_all", "args": {"completion_type": "cite", "insert_char": "{"}}
+]

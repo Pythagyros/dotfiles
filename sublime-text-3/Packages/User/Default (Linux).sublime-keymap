@@ -1,0 +1,42 @@
+[
+	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+	//autcite macro
+	{ "keys": ["ctrl+shift+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/cite.sublime-macro"}},
+	//rebind table of contents to allow for ref macro
+	{ "keys": ["ctrl+shift+t"], "command": "latex_toc_quickpanel",
+		"args": {"only_current_file": false},
+		"context":  [
+			{"key": "selector", "operator": "equal", "operand": "text.tex"},
+			{"key": "overwrite_goto_overlay"}]
+	},
+	{ "keys": ["ctrl+shift+r"], "command": "run_macro_file", "args": {"file": "res://Packages/User/ref.sublime-macro"}},
+
+	//move by characters/lines
+	//forward
+	{ "keys": ["alt+ö"], "command": "move", "args": {"by": "characters", "forward": true}},
+	//backward
+	{ "keys": ["alt+j"], "command": "move", "args": {"by": "characters", "forward": false}},
+	//down
+	{ "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
+	//up
+	{ "keys": ["alt+l"], "command": "move", "args": {"by": "lines", "forward": true}},
+	
+	//select by character
+	{ "keys": ["alt+shift+ö"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true}},
+	{ "keys": ["alt+shift+j"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true}},
+	{ "keys": ["alt+shift+k"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true}},
+	{ "keys": ["alt+shift+l"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true}},
+
+	//move by words
+	{ "keys": ["ctrl+alt+ö"], "command": "move", "args": {"by": "words", "forward": true}},
+	{ "keys": ["ctrl+alt+j"], "command": "move", "args": {"by": "words", "forward": false}},
+
+	//select by words
+	{ "keys": ["ctrl+alt+shift+ö"], "command": "move", "args": {"by": "words", "forward": true, "extend": true}},
+	{ "keys": ["ctrl+alt+shift+j"], "command": "move", "args": {"by": "words", "forward": false, "extend": true}},
+
+	//move to start/end of line
+	{ "keys": ["alt+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+]

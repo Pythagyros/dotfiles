@@ -98,16 +98,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # configure workspace variables
-set $workspace1 "1: Calendar/Todo"
-set $workspace2 "2: FireFox"
-set $workspace3 "3: LaTeX"
-set $workspace4 "4: Random"
-set $workspace5 "5: eMail/Chat"
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
 set $workspace6 "6"
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
-set $workspace10 "10: Spotify"
+set $workspace10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -184,12 +184,12 @@ hide_edge_borders both
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
-#       height 27
-#       mode dock
-#       position top
-#       i3bar_command i3bar -t
-# }
+bar {
+     height 27
+     mode dock
+  position top
+     i3bar_command i3bar -t
+}
 
 bindsym $mod+control+l exec i3lock --color "$bg-color"
 
@@ -202,22 +202,22 @@ bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/monitor_switch.sh
 
 # Workspace assignment
 # assign [class="^TeXstudio$"] → $workspace3
-# assign [class="^Thunderbird$"] → $workspace5
+assign [class="^Thunderbird$"] → $workspace5
 for_window [class="^Spotify$"] move to workspace $workspace10
 
 # Load saved workspace layouts
-exec --no-startup-id i3-msg 'workspace 1: Calendar/Todo; append_layout ~/.config/i3/workspaces/ws1.json'
-exec --no-startup-id i3-msg 'workspace 5: eMail/Chat; append_layout ~/.config/i3/workspaces/ws5.json'
+# exec --no-startup-id i3-msg 'workspace 1: 1; append_layout ~/.config/i3/workspaces/ws1.json'
+# exec --no-startup-id i3-msg 'workspace 5: 5; append_layout ~/.config/i3/workspaces/ws5.json'
 
 # Startup programs
-exec --no-startup-id i3-msg 'workspace 1: Calendar/Todo; exec firefox https://calendar.google.com/calendar/r'
-exec --no-startup-id i3-msg 'workspace 1: Calendar/Todo; exec firefox https://todoist.com/app?lang=en#agenda%2Foverdue%2C%20today'
-# exec --no-startup-id i3-msg "workspace 3: LaTeX; exec texstudio"
+exec --no-startup-id i3-msg 'workspace 1: 1; exec firefox https://calendar.google.com/calendar/r'
+exec --no-startup-id i3-msg 'workspace 1: 1; exec firefox https://todoist.com/app?lang=en#agenda%2Foverdue%2C%20today'
+# exec --no-startup-id i3-msg "workspace 3: 3; exec texstudio"
 exec --no-startup-id thunderbird
 exec --no-startup-id nm-applet
 
 # Background image
-exec_always feh --bg-scale /home/philipp/Pictures/Firefox_wallpaper.png
+exec_always feh --bg-scale /home/philipp/Pictures/Night-time-wide-wallpaper-HD.jpg
 exec compton -f
 
 # Enable screen brightness controls
@@ -234,4 +234,4 @@ gaps outer 5
 for_window [class="^.*"] border pixel 0
 
 ## Add polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh

@@ -5,10 +5,20 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
+		"AcademicMarkdown",
+		"Citer",
+		"GitGutter",
+		"INI",
 		"LaTeX-cwl",
 		"LaTeXSmartQuotes",
 		"LaTeXTools",
+		"MarkdownEditing",
+		"Material Theme",
 		"Package Control",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"Theme - Solarized Flat",
+		"WordCount",
+		"Writing Color Scheme"
 	]
 }

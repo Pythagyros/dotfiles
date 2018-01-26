@@ -1,0 +1,4 @@
+[
+	{"command": "insert", "args": {"characters": "\\ref"}},
+	{"command": "latex_fill_all", "args": {"completion_type": "ref", "insert_char": "{"}}
+]
