@@ -13,9 +13,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -71,10 +68,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 39.0,
-		"last_filter": "",
+		"height": 400.0,
+		"last_filter": "synta",
 		"selected_items":
 		[
+			[
+				"synta",
+				"Set Syntax: INI"
+			],
 			[
 				"syntax ini",
 				"Set Syntax: INI"
@@ -164,7 +165,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 501.0
+		"width": 465.0
 	},
 	"console":
 	{
@@ -182,10 +183,6 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/philipp/dotfiles"
-	],
 	"file_history":
 	[
 		"/home/philipp/dotfiles",
@@ -209,7 +206,7 @@
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -223,6 +220,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"XF86",
+			"i3bar",
+			"stack",
 			"9",
 			"spotify",
 			"spacing",
@@ -245,17 +245,9 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -297,10 +289,9 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "dotfiles.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -340,7 +331,7 @@
 		[
 			[
 				"",
-				"~/masterarbeit/main.sublime-workspace"
+				"~/masterarbeit/masterarbeit.sublime-project"
 			],
 			[
 				"dotfiles",
@@ -362,7 +353,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},

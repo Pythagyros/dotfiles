@@ -1,13 +1,14 @@
 {
 	"folder_history":
 	[
+		"/home/philipp/Documents/python_projects/telegram_bot",
 		"/home/philipp/Documents/Briefe",
 		"/home/philipp/Documents/pharmbio/applied_pb",
 		"/home/philipp/dotfiles",
 		"/home/philipp/masterarbeit"
 	],
 	"last_version": 3143,
-	"last_window_id": 23,
+	"last_window_id": 40,
 	"log_indexing": false,
 	"settings":
 	{
@@ -18,14 +19,6 @@
 			{
 				"selected_items":
 				[
-					[
-						"spo",
-						"spotify_info"
-					],
-					[
-						"mpd",
-						"mpd"
-					]
 				]
 			},
 			"build_system_choices":
@@ -82,33 +75,29 @@
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 179.0,
-				"last_filter": "install",
+				"height": 400.0,
+				"last_filter": "",
 				"selected_items":
 				[
 					[
-						"install",
-						"Package Control: Install Package"
+						"latex",
+						"LaTeXTools: Check system"
 					],
 					[
-						"syntax ini",
-						"Set Syntax: INI"
+						"prefe",
+						"Preferences: Settings"
 					],
 					[
 						"color",
 						"UI: Select Color Scheme"
 					],
 					[
-						"colro",
+						"keybin",
+						"Preferences: Key Bindings"
+					],
+					[
+						"colo",
 						"UI: Select Color Scheme"
-					],
-					[
-						"insta",
-						"Package Control: Install Package"
-					],
-					[
-						"ins\t",
-						"Package Control: Install Package"
 					],
 					[
 						"pref",
@@ -125,10 +114,6 @@
 					[
 						"latexto",
 						"LaTeXTools: Search for commands in document"
-					],
-					[
-						"colo",
-						"UI: Select Color Scheme"
 					],
 					[
 						"instal",
@@ -151,6 +136,10 @@
 						"Material Theme: Advanced configuration"
 					],
 					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
 						"latexcw",
 						"LaTeXTools: Show word count"
 					],
@@ -163,10 +152,6 @@
 						"UI: Select Color Scheme"
 					],
 					[
-						"latex",
-						"LaTeXTools: Check system"
-					],
-					[
 						"latexrese",
 						"LaTeXTools: Reset user settings to default"
 					],
@@ -175,11 +160,11 @@
 						"Install Package Control"
 					]
 				],
-				"width": 501.0
+				"width": 465.0
 			},
 			"console":
 			{
-				"height": 0.0,
+				"height": 186.0,
 				"history":
 				[
 				]
@@ -195,12 +180,19 @@
 			},
 			"file_history":
 			[
-				"/home/philipp/Documents/beamertest.pdf",
-				"/home/philipp/Documents/kündigung.pdf",
-				"/home/philipp/Documents/pharmbio/applied_pb/P41968vP29274.fasta",
-				"/home/philipp/dotfiles",
-				"/home/philipp/dotfiles/i3/config",
-				"/home/philipp/dotfiles/dotfiles.sublime-project",
+				"/media/philipp/Transcend/Masterarbeit_2017/md_notes/taxonomy_notes.md",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/standardtable.sublime-snippet",
+				"/home/philipp/.config/sublime-text-3/Packages/User/standardfigure.sublime-snippet",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/standardfigure.sublime-snippet",
+				"/home/philipp/Documents/python_projects/rdkit_stuff/streptomedb.sdf",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+				"/home/philipp/Documents/references/My Library.bib",
+				"/home/philipp/masterarbeit/chapters/results.tex",
+				"/home/philipp/Documents/ags.md",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/siunitx.sublime-snippet",
+				"/home/philipp/masterarbeit/references/library.bib",
+				"/home/philipp/masterarbeit/masterarbeit.sublime-project",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/cite.sublime-macro",
 				"/home/philipp/masterarbeit/main.tex",
 				"/home/philipp/masterarbeit/chapters/introduction.tex",
 				"/home/philipp/masterarbeit/chapters/methods.tex",
@@ -208,18 +200,15 @@
 				"/home/philipp/dotfiles/sublime-text-3/Packages/LaTeXTools/Default (Linux).sublime-keymap",
 				"/home/philipp/dotfiles/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 				"/home/philipp/dotfiles/sublime-text-3/Packages/User/autocite.sublime-snippet",
-				"/home/philipp/masterarbeit/chapters/results.tex",
-				"/home/philipp/masterarbeit/masterarbeit.sublime-project",
 				"/home/philipp/masterarbeit/masterarbeit.sublime-workspace",
 				"/home/philipp/masterarbeit/chapters/appendix.tex",
 				"/home/philipp/.config/sublime-text-3/Packages/User/LaTeXTools.sublime-settings",
-				"/home/philipp/masterarbeit/references/library.bib",
 				"/home/philipp/masterarbeit/config.tex",
 				"/home/philipp/masterarbeit/chapters/preamble.tex"
 			],
 			"find":
 			{
-				"height": 38.0
+				"height": 39.0
 			},
 			"find_in_files":
 			{
@@ -233,6 +222,15 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"{}",
+					" \n",
+					"at pH~2",
+					"centi",
+					"\\centi",
+					"docuemnt",
+					"medium",
+					"ion exchange chromatography",
+					"path"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -249,7 +247,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 31.0
+				"height": 63.0
 			},
 			"input":
 			{
@@ -271,7 +269,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 58.0
+				"height": 60.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -281,24 +279,56 @@
 				"selected_items":
 				[
 					[
-						"polybar",
-						"polybar/config"
+						"main",
+						"main.tex"
 					],
 					[
 						"res",
 						"chapters/results.tex"
 					],
 					[
-						"re",
-						"chapters/results.tex"
+						"int",
+						"chapters/introduction.tex"
 					],
 					[
-						"maspro",
-						"masterarbeit.sublime-project"
+						"me",
+						"chapters/methods.tex"
 					],
 					[
 						"resu",
 						"chapters/results.tex"
+					],
+					[
+						"meth",
+						"chapters/methods.tex"
+					],
+					[
+						"re",
+						"chapters/results.tex"
+					],
+					[
+						"conf",
+						"config.tex"
+					],
+					[
+						"appen",
+						"chapters/appendix.tex"
+					],
+					[
+						"work",
+						"workflow.tex"
+					],
+					[
+						"wok",
+						"workflow.tex"
+					],
+					[
+						"con",
+						"config.tex"
+					],
+					[
+						"maspro",
+						"masterarbeit.sublime-project"
 					]
 				],
 				"width": 0.0
@@ -310,15 +340,11 @@
 				"selected_items":
 				[
 					[
-						"dotfiles",
-						"~/dotfiles/untitled.sublime-workspace"
+						"main",
+						"~/masterarbeit/main.sublime-workspace"
 					],
 					[
 						"",
-						"~/dotfiles/untitled.sublime-workspace"
-					],
-					[
-						"main",
 						"~/masterarbeit/main.sublime-workspace"
 					]
 				],
@@ -343,7 +369,7 @@
 			{
 			}
 		},
-		"new_window_width": 949.0
+		"new_window_width": 1902.0
 	},
 	"windows":
 	[
@@ -352,17 +378,9 @@
 			{
 				"selected_items":
 				[
-					[
-						"spo",
-						"spotify_info"
-					],
-					[
-						"mpd",
-						"mpd"
-					]
 				]
 			},
-			"build_system": "",
+			"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 			"build_system_choices":
 			[
 				[
@@ -417,33 +435,29 @@
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 179.0,
-				"last_filter": "install",
+				"height": 400.0,
+				"last_filter": "",
 				"selected_items":
 				[
 					[
-						"install",
-						"Package Control: Install Package"
+						"latex",
+						"LaTeXTools: Check system"
 					],
 					[
-						"syntax ini",
-						"Set Syntax: INI"
+						"prefe",
+						"Preferences: Settings"
 					],
 					[
 						"color",
 						"UI: Select Color Scheme"
 					],
 					[
-						"colro",
+						"keybin",
+						"Preferences: Key Bindings"
+					],
+					[
+						"colo",
 						"UI: Select Color Scheme"
-					],
-					[
-						"insta",
-						"Package Control: Install Package"
-					],
-					[
-						"ins\t",
-						"Package Control: Install Package"
 					],
 					[
 						"pref",
@@ -460,10 +474,6 @@
 					[
 						"latexto",
 						"LaTeXTools: Search for commands in document"
-					],
-					[
-						"colo",
-						"UI: Select Color Scheme"
 					],
 					[
 						"instal",
@@ -486,6 +496,10 @@
 						"Material Theme: Advanced configuration"
 					],
 					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
 						"latexcw",
 						"LaTeXTools: Show word count"
 					],
@@ -498,10 +512,6 @@
 						"UI: Select Color Scheme"
 					],
 					[
-						"latex",
-						"LaTeXTools: Check system"
-					],
-					[
 						"latexrese",
 						"LaTeXTools: Reset user settings to default"
 					],
@@ -510,11 +520,11 @@
 						"Install Package Control"
 					]
 				],
-				"width": 501.0
+				"width": 465.0
 			},
 			"console":
 			{
-				"height": 0.0,
+				"height": 186.0,
 				"history":
 				[
 				]
@@ -530,12 +540,19 @@
 			},
 			"file_history":
 			[
-				"/home/philipp/Documents/beamertest.pdf",
-				"/home/philipp/Documents/kündigung.pdf",
-				"/home/philipp/Documents/pharmbio/applied_pb/P41968vP29274.fasta",
-				"/home/philipp/dotfiles",
-				"/home/philipp/dotfiles/i3/config",
-				"/home/philipp/dotfiles/dotfiles.sublime-project",
+				"/media/philipp/Transcend/Masterarbeit_2017/md_notes/taxonomy_notes.md",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/standardtable.sublime-snippet",
+				"/home/philipp/.config/sublime-text-3/Packages/User/standardfigure.sublime-snippet",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/standardfigure.sublime-snippet",
+				"/home/philipp/Documents/python_projects/rdkit_stuff/streptomedb.sdf",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+				"/home/philipp/Documents/references/My Library.bib",
+				"/home/philipp/masterarbeit/chapters/results.tex",
+				"/home/philipp/Documents/ags.md",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/siunitx.sublime-snippet",
+				"/home/philipp/masterarbeit/references/library.bib",
+				"/home/philipp/masterarbeit/masterarbeit.sublime-project",
+				"/home/philipp/dotfiles/sublime-text-3/Packages/User/cite.sublime-macro",
 				"/home/philipp/masterarbeit/main.tex",
 				"/home/philipp/masterarbeit/chapters/introduction.tex",
 				"/home/philipp/masterarbeit/chapters/methods.tex",
@@ -543,18 +560,15 @@
 				"/home/philipp/dotfiles/sublime-text-3/Packages/LaTeXTools/Default (Linux).sublime-keymap",
 				"/home/philipp/dotfiles/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 				"/home/philipp/dotfiles/sublime-text-3/Packages/User/autocite.sublime-snippet",
-				"/home/philipp/masterarbeit/chapters/results.tex",
-				"/home/philipp/masterarbeit/masterarbeit.sublime-project",
 				"/home/philipp/masterarbeit/masterarbeit.sublime-workspace",
 				"/home/philipp/masterarbeit/chapters/appendix.tex",
 				"/home/philipp/.config/sublime-text-3/Packages/User/LaTeXTools.sublime-settings",
-				"/home/philipp/masterarbeit/references/library.bib",
 				"/home/philipp/masterarbeit/config.tex",
 				"/home/philipp/masterarbeit/chapters/preamble.tex"
 			],
 			"find":
 			{
-				"height": 38.0
+				"height": 39.0
 			},
 			"find_in_files":
 			{
@@ -568,6 +582,15 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"{}",
+					" \n",
+					"at pH~2",
+					"centi",
+					"\\centi",
+					"docuemnt",
+					"medium",
+					"ion exchange chromatography",
+					"path"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -584,7 +607,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 31.0
+				"height": 63.0
 			},
 			"input":
 			{
@@ -626,10 +649,10 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,962,36,1911,1071,1920,1080",
+			"position": "0,0,0,0,0,1929,36,3831,1071,3840,1080",
 			"replace":
 			{
-				"height": 58.0
+				"height": 60.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -639,24 +662,56 @@
 				"selected_items":
 				[
 					[
-						"polybar",
-						"polybar/config"
+						"main",
+						"main.tex"
 					],
 					[
 						"res",
 						"chapters/results.tex"
 					],
 					[
-						"re",
-						"chapters/results.tex"
+						"int",
+						"chapters/introduction.tex"
 					],
 					[
-						"maspro",
-						"masterarbeit.sublime-project"
+						"me",
+						"chapters/methods.tex"
 					],
 					[
 						"resu",
 						"chapters/results.tex"
+					],
+					[
+						"meth",
+						"chapters/methods.tex"
+					],
+					[
+						"re",
+						"chapters/results.tex"
+					],
+					[
+						"conf",
+						"config.tex"
+					],
+					[
+						"appen",
+						"chapters/appendix.tex"
+					],
+					[
+						"work",
+						"workflow.tex"
+					],
+					[
+						"wok",
+						"workflow.tex"
+					],
+					[
+						"con",
+						"config.tex"
+					],
+					[
+						"maspro",
+						"masterarbeit.sublime-project"
 					]
 				],
 				"width": 0.0
@@ -668,15 +723,11 @@
 				"selected_items":
 				[
 					[
-						"dotfiles",
-						"~/dotfiles/untitled.sublime-workspace"
+						"main",
+						"~/masterarbeit/main.sublime-workspace"
 					],
 					[
 						"",
-						"~/dotfiles/untitled.sublime-workspace"
-					],
-					[
-						"main",
 						"~/masterarbeit/main.sublime-workspace"
 					]
 				],
@@ -703,7 +754,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 23
+			"window_id": 39
 		}
 	],
 	"workspaces":
@@ -711,9 +762,9 @@
 		"recent_workspaces":
 		[
 			"/home/philipp/masterarbeit/masterarbeit.sublime-workspace",
-			"/home/philipp/masterarbeit/main.sublime-workspace",
 			"/home/philipp/dotfiles/dotfiles.sublime-workspace",
-			"/home/philipp/dotfiles/untitled.sublime-workspace"
+			"/home/philipp/dotfiles/untitled.sublime-workspace",
+			"/home/philipp/masterarbeit/main.sublime-workspace"
 		]
 	}
 }

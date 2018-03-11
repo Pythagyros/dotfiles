@@ -13,6 +13,9 @@
 			]
 		]
 	},
+	"buffers":
+	[
+	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -221,6 +224,14 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
 	"incremental_find":
 	{
 		"height": 31.0
@@ -265,6 +276,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
+	"project": "untitled.sublime-project",
 	"replace":
 	{
 		"height": 58.0
@@ -302,9 +314,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "dotfiles",
+		"last_filter": "dot",
 		"selected_items":
 		[
+			[
+				"dot",
+				"~/dotfiles/dotfiles.sublime-project"
+			],
 			[
 				"dotfiles",
 				"~/dotfiles/untitled.sublime-workspace"
@@ -329,6 +345,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},

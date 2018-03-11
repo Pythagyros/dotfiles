@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias tuevpn="sudo openconnect -u zxmbx69 ras.uni-tuebingen.de"
 
 eval `dircolors ~/.dir_colors/dircolors`
 

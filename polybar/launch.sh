@@ -9,7 +9,7 @@ while pgrep -u $UID -x polybar >/dev/null;
 done
 
 # Launch bar1 and bar2
-polybar top 
+polybar default 
 
 
 echo "Bars launched..."

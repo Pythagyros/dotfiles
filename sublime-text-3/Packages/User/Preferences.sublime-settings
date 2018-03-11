@@ -13,6 +13,7 @@
 	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Theme - Solarized Flat/Solarized Flat Dark.tmTheme",
+	"font_face": "Source Code Pro",
 	"font_size": 10,
 	"hot_exit": false,
 	"ignored_packages":
