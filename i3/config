@@ -102,16 +102,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # configure workspace variables
-set $workspace1 "1"
-set $workspace2 "2"
-set $workspace3 "3"
+set $workspace1 "1 "
+set $workspace2 "2 "
+set $workspace3 "3 "
 set $workspace4 "4"
-set $workspace5 "5"
+set $workspace5 "5 "
 set $workspace6 "6"
 set $workspace7 "7"
 set $workspace8 "8"
-set $workspace9 "9"
-set $workspace10 "10"
+set $workspace9 "9 "
+set $workspace10 "10 "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -214,11 +214,11 @@ for_window [class="^Spotify$"] move to workspace $workspace10
 # exec --no-startup-id i3-msg 'workspace 5: 5; append_layout ~/.config/i3/workspaces/ws5.json'
 
 # Startup programs
-exec --no-startup-id i3-msg 'workspace 1; exec firefox https://calendar.google.com/calendar/r'
-exec --no-startup-id i3-msg 'workspace 1; exec firefox https://todoist.com/app?lang=en#agenda%2Foverdue%2C%20today'
+# exec --no-startup-id i3-msg 'workspace 1 ; exec firefox https://calendar.google.com/calendar/r'
+# exec --no-startup-id i3-msg 'workspace 1 ; exec firefox https://todoist.com/app?lang=en#agenda%2Foverdue%2C%20today'
 # exec --no-startup-id i3-msg "workspace 3: 3; exec texstudio"
-exec --no-startup-id thunderbird
-exec --no-startup-id nm-applet
+# exec --no-startup-id thunderbird
+# exec --no-startup-id nm-applet
 
 # Background image
 exec_always feh --bg-scale /home/philipp/Pictures/Night-time-wide-wallpaper-HD.jpg

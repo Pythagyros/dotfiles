@@ -103,3 +103,12 @@ prompt_context() {}
 if [ -d "/usr/local/texlive/2017/bin/x86_64-linux" ] ; then
   PATH=$PATH:"/usr/local/texlive/2017/bin/86_64-linux"
 fi
+
+alias intern_off="xrandr --output eDP-1-1 --off --output HDMI-1-1 --auto"
+alias intern_on="xrandr --output eDP-1-1 --auto --output HDMI-1-1 --auto"
+
+
+# Add scripts directory to path
+if [ -d "$HOME/scripts" ] ; then
+  PATH="$PATH:$HOME/scripts"
+fi

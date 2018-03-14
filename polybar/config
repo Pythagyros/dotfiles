@@ -36,7 +36,8 @@
 ; orange = #cb4b16
 
 [colors]
-background          = #2f343f
+; background          = #2f343f
+background 			= #303541
 foreground          = #dfdfdf
 border              = #00000000
 line                = #268bd2

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"tray",
+				"tray-transparent"
+			],
+			[
 				"spo",
 				"spotify_info"
 			],
@@ -68,10 +72,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "synta",
+		"height": 214.0,
+		"last_filter": "isntal",
 		"selected_items":
 		[
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"synta",
 				"Set Syntax: INI"
@@ -165,7 +177,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 465.0
+		"width": 501.0
 	},
 	"console":
 	{
@@ -185,8 +197,10 @@
 	},
 	"file_history":
 	[
-		"/home/philipp/dotfiles",
 		"/home/philipp/dotfiles/i3/config",
+		"/home/philipp/dotfiles/polybar/launch.sh",
+		"/home/philipp/dotfiles/sublime-text-3/Packages/UnicodeCharacterInsert/Default.sublime-keymap",
+		"/home/philipp/dotfiles",
 		"/home/philipp/dotfiles/dotfiles.sublime-project",
 		"/home/philipp/masterarbeit/main.tex",
 		"/home/philipp/masterarbeit/chapters/introduction.tex",
@@ -206,7 +220,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -220,6 +234,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"color",
+			"backlig",
+			"backlight",
+			"wired-netw",
+			"weat",
+			"date",
+			"battery",
+			"workspace_layout",
 			"XF86",
 			"i3bar",
 			"stack",
@@ -247,7 +269,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 40.0
 	},
 	"input":
 	{
@@ -291,7 +313,7 @@
 	"pinned_build_system": "",
 	"replace":
 	{
-		"height": 60.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -326,9 +348,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "mas",
 		"selected_items":
 		[
+			[
+				"mas",
+				"~/masterarbeit/masterarbeit.sublime-project"
+			],
+			[
+				"dot",
+				"~/dotfiles/untitled.sublime-workspace"
+			],
 			[
 				"",
 				"~/masterarbeit/masterarbeit.sublime-project"
