@@ -1,6 +1,8 @@
 {
 	"folder_history":
 	[
+		"/home/philipp/Documents/python_projects",
+		"/home/philipp/Documents/python_projects/rosalind_python",
 		"/home/philipp/Documents/python_projects/telegram_bot",
 		"/home/philipp/Documents/Briefe",
 		"/home/philipp/Documents/pharmbio/applied_pb",
@@ -8,11 +10,11 @@
 		"/home/philipp/masterarbeit"
 	],
 	"last_version": 3143,
-	"last_window_id": 42,
+	"last_window_id": 47,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 984.0,
+		"new_window_height": 976.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -235,7 +237,7 @@
 			],
 			"find":
 			{
-				"height": 40.0
+				"height": 35.0
 			},
 			"find_in_files":
 			{
@@ -249,6 +251,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"example",
 					"color",
 					"backlig",
 					"backlight",
@@ -284,7 +287,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 40.0
+				"height": 35.0
 			},
 			"input":
 			{
@@ -306,7 +309,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 76.0
+				"height": 66.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -341,9 +344,13 @@
 			"select_project":
 			{
 				"height": 500.0,
-				"last_filter": "mas",
+				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"",
+						"~/sublime_projects/master_thesis.sublime-project"
+					],
 					[
 						"mas",
 						"~/masterarbeit/masterarbeit.sublime-project"
@@ -351,10 +358,6 @@
 					[
 						"dot",
 						"~/dotfiles/untitled.sublime-workspace"
-					],
-					[
-						"",
-						"~/masterarbeit/masterarbeit.sublime-project"
 					],
 					[
 						"dotfiles",
@@ -612,7 +615,7 @@
 			],
 			"find":
 			{
-				"height": 40.0
+				"height": 35.0
 			},
 			"find_in_files":
 			{
@@ -626,6 +629,7 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"example",
 					"color",
 					"backlig",
 					"backlight",
@@ -661,7 +665,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 40.0
+				"height": 35.0
 			},
 			"input":
 			{
@@ -703,10 +707,10 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,9,1167,1911,2151,1920,2160",
+			"position": "0,0,0,0,0,9,1175,1911,2151,1920,2160",
 			"replace":
 			{
-				"height": 76.0
+				"height": 66.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -741,9 +745,13 @@
 			"select_project":
 			{
 				"height": 500.0,
-				"last_filter": "mas",
+				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"",
+						"~/sublime_projects/master_thesis.sublime-project"
+					],
 					[
 						"mas",
 						"~/masterarbeit/masterarbeit.sublime-project"
@@ -751,10 +759,6 @@
 					[
 						"dot",
 						"~/dotfiles/untitled.sublime-workspace"
-					],
-					[
-						"",
-						"~/masterarbeit/masterarbeit.sublime-project"
 					],
 					[
 						"dotfiles",
@@ -795,6 +799,9 @@
 	{
 		"recent_workspaces":
 		[
+			"/home/philipp/sublime_projects/dotfiles.sublime-workspace",
+			"/home/philipp/Documents/python_projects/python.sublime-workspace",
+			"/home/philipp/sublime_projects/master_thesis.sublime-workspace",
 			"/home/philipp/dotfiles/dotfiles.sublime-workspace",
 			"/home/philipp/dotfiles/untitled.sublime-workspace",
 			"/home/philipp/masterarbeit/masterarbeit.sublime-workspace",

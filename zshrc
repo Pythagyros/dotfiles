@@ -112,3 +112,6 @@ alias intern_on="xrandr --output eDP-1-1 --auto --output HDMI-1-1 --auto"
 if [ -d "$HOME/scripts" ] ; then
   PATH="$PATH:$HOME/scripts"
 fi
+
+alias workspace="~/dotfiles/workspace.sh"
+

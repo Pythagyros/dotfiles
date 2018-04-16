@@ -12,9 +12,10 @@
 		}
 	],
 	"bold_folder_labels": true,
+	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Theme - Solarized Flat/Solarized Flat Dark.tmTheme",
 	"font_face": "Source Code Pro",
-	"font_size": 13,
+	"font_size": 12,
 	"hot_exit": false,
 	"ignored_packages":
 	[

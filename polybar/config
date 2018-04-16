@@ -112,7 +112,7 @@ tray-background = ${colors.background}
 ;cursor-scroll = ns-resize
 
 [bar/default]
-; monitor             = ${env:MONITOR:}
+monitor             = ${env:MONITOR:}
 width               = 100%
 height              = 24
 radius              = 5.0
