@@ -11,14 +11,14 @@ done
 # Get all monitor names to display multiple polybars https://github.com/jaagr/polybar/issues/763
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload default &
+    MONITOR=$m polybar --reload davidarrieta &
   done
 else
-  polybar --reload default &
+  polybar --reload davidarrieta &
 fi
 
 # Launch bar1 and bar2
-# polybar default 
+# polybar davidarrieta 
 
 
 echo "Bars launched..."

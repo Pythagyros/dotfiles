@@ -593,6 +593,30 @@
 				"selected_items":
 				[
 					[
+						"modu",
+						"modules-right"
+					],
+					[
+						"module",
+						"module-margin-right"
+					],
+					[
+						"moduel-mar",
+						"module-margin-left"
+					],
+					[
+						"paddi",
+						"padding-right"
+					],
+					[
+						"paddin",
+						"padding-left"
+					],
+					[
+						"padd",
+						"padding-left"
+					],
+					[
 						"tray",
 						"tray-transparent"
 					],
@@ -613,6 +637,33 @@
 					"settings":
 					{
 						"buffer_size": 4197,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/philipp/dotfiles/polybar/config",
+					"settings":
+					{
+						"buffer_size": 21474,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/philipp/dotfiles/i3/config",
+					"settings":
+					{
+						"buffer_size": 9844,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/philipp/dotfiles/polybar/launch.sh",
+					"settings":
+					{
+						"buffer_size": 550,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -673,10 +724,14 @@
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 214.0,
-				"last_filter": "isntal",
+				"height": 400.0,
+				"last_filter": "synta",
 				"selected_items":
 				[
+					[
+						"synta",
+						"Set Syntax: INI"
+					],
 					[
 						"isntal",
 						"Package Control: Install Package"
@@ -684,10 +739,6 @@
 					[
 						"inst",
 						"Package Control: Install Package"
-					],
-					[
-						"synta",
-						"Set Syntax: INI"
 					],
 					[
 						"syntax ini",
@@ -778,7 +829,7 @@
 						"Install Package Control"
 					]
 				],
-				"width": 501.0
+				"width": 465.0
 			},
 			"console":
 			{
@@ -799,7 +850,8 @@
 			"expanded_folders":
 			[
 				"/home/philipp/dotfiles",
-				"/home/philipp/dotfiles/i3"
+				"/home/philipp/dotfiles/i3",
+				"/home/philipp/dotfiles/polybar"
 			],
 			"file_history":
 			[
@@ -826,7 +878,7 @@
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 42.0
 			},
 			"find_in_files":
 			{
@@ -840,6 +892,9 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"getCurVol",
+					"underline",
+					"default",
 					"example",
 					"color",
 					"backlig",
@@ -877,7 +932,7 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 2,
 					"sheets":
 					[
 						{
@@ -893,8 +948,8 @@
 								"selection":
 								[
 									[
-										202,
-										202
+										1760,
+										1769
 									]
 								],
 								"settings":
@@ -915,10 +970,126 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 3050.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/philipp/dotfiles/polybar/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 21474,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4074,
+										4074
+									]
+								],
+								"settings":
+								{
+									"WordCount":
+									{
+										"changes": 936,
+										"count": 1906,
+										"modified": false,
+										"selection": false,
+										"status": -1,
+										"syntax": "plain text"
+									},
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/INI/INI.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 4008.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/philipp/dotfiles/i3/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 9844,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										8989,
+										8989
+									]
+								],
+								"settings":
+								{
+									"WordCount":
+									{
+										"changes": 11,
+										"count": 1151,
+										"modified": false,
+										"selection": false,
+										"status": -1,
+										"syntax": "plain text"
+									},
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/zzz A File Icon zzz/aliases/XML (Config).sublime-syntax",
+									"tab_size": 8,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 5979.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/philipp/dotfiles/polybar/launch.sh",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 550,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										475,
+										475
+									]
+								],
+								"settings":
+								{
+									"WordCount":
+									{
+										"changes": 39,
+										"count": 67,
+										"modified": false,
+										"selection": false,
+										"status": -1,
+										"syntax": "plain text"
+									},
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
 							"type": "text"
 						}
 					]
@@ -968,7 +1139,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,9,1123,1911,2151,1920,2160",
+			"position": "0,0,0,0,0,9,1167,1911,2151,1920,2160",
 			"project": "dotfiles.sublime-project",
 			"replace":
 			{

@@ -230,7 +230,7 @@ for_window [class="^Spotify$"] move to workspace $workspace10
 # exec --no-startup-id i3-msg 'workspace 1 ; exec firefox https://todoist.com/app?lang=en#agenda%2Foverdue%2C%20today'
 # exec --no-startup-id i3-msg "workspace 3: 3; exec texstudio"
 # exec --no-startup-id thunderbird
-# exec --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
 
 # Background image
 exec_always feh --bg-scale /home/philipp/Pictures/Night-time-wide-wallpaper-HD.jpg

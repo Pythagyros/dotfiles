@@ -37,18 +37,24 @@
 
 [colors]
 ; background          = #2f343f
+; general bar color
 background 			= #303541
+; Color when you are in a certain workspace and in the i3 module appears with an illumination to indicate that you are there
+background-alt 		= ${xrdb:color19:}
+; General font color
 foreground          = #dfdfdf
 border              = #00000000
 line                = #268bd2
+; Flashing color when urgent window appears
 alert               = #cb4b16
 inactive            = #586e75
+; Some color presets
 yellow              = #f3f4f5
 green               = #859900
 cyan                = #2aa198
 violet              = #6c71c4
 magenta             = #d33682
-orange = #cb4b16
+orange 				= #cb4b16
 
 [bar/top]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -136,6 +142,38 @@ modules-center      = spotifytitle
 modules-right       = wired-network wireless-network  volume battery date
 scroll-up           = i3wm-wsnext
 scroll-down = i3wm-wsprev
+
+[bar/davidarrieta]
+monitor 			= ${env:MONITOR:eDP-1-1}
+width 				= 100%
+height				= 27
+fixed-center 		= true
+background          = ${colors.background}
+foreground          = ${colors.foreground}
+line-size			= 3
+line-color			= #f00
+border-size 		= 0
+border-color		= #00000000
+padding-left 		= 2
+padding-right 		= 2
+module-margin-left 	= 1
+module-margin-right = 2
+font-0              = Ubuntu Mono:pixelsize=12;2
+font-1              = UbuntuMono Nerd Font:pixelsize=12;3
+font-2 				= FontAwesome:pixelsize=12;3
+
+modules-left 		= i3
+
+modules-center 		= spotifytitle
+
+modules-right		= battery backlight scriptdate powermenu ;pavolume
+
+tray-position 		= right
+tray-padding 		= 2
+tray-maxsize 		= 16
+
+cursor-click 		= pointer
+cursor-scroll 		= ns-resize
 
 [module/xwindow]
 type = internal/xwindow
@@ -313,7 +351,7 @@ interval = 5
 ; ws-icon-3 = 10;
 ; ws-icon-4 = 9;
 
-[module/mpd]
+[module/oldmpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
@@ -326,7 +364,7 @@ icon-next = 
 label-song-maxlen = 25
 label-song-ellipsis = true
 
-[module/xbacklight]
+[module/oldxbacklight]
 type = internal/xbacklight
 
 
@@ -344,7 +382,45 @@ bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
 
-[module/backlight]
+[module/mpd]
+type = internal/mpd
+format-underline =  #FF0000
+
+host = localhost 
+; Seconds to sleep between progressbar/song timer sync
+; Default: 1
+interval = 1
+
+;format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+format-online = <label-song> <icon-prev> <icon-stop> <toggle> <icon-next>
+;format-playing = ${self.format-online}
+;format-paused = ${self.format-online}
+;format-stopped = ${self.format-online}
+
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+
+label-song = %artist% - %title%
+
+label-song-maxlen = 75
+label-song-ellipsis = true
+
+; Available tokens:
+;   %elapsed%
+;   %total%
+; Default: %elapsed% / %total%
+label-time = %elapsed% 
+
+; Only applies if <bar-progress> is used
+bar-progress-width = 5
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+
+[module/xbacklight]
 type = internal/xbacklight
 ; output = HDMI1-1
 card = intel_backlight
@@ -355,6 +431,36 @@ ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
+
+[module/backlight]
+type = internal/backlight
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+
+; Available tags:
+;   <label> (default)
+;   <ramp>
+;   <bar>
+format = <label>
+
+; Available tokens:
+;   %percentage% (default)
+label =  %percentage%%
+
+; Only applies if <ramp> is used
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+
+; Only applies if <bar> is used
+bar-width = 10
+bar-indicator = |
+bar-fill = ─
+bar-empty = ─
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -511,7 +617,7 @@ ramp-volume-0               = 
 ramp-volume-1               = 
 ramp-volume-2 				= 
 
-[module/battery]
+[module/oldbattery]
 type                        = internal/battery
 battery                     = BAT0
 adapter                     = AC
@@ -545,6 +651,87 @@ animation-charging-4        = 
 animation-charging-padding  = 1
 animation-charging-framerate= 1500
 
+[module/battery]
+type = internal/battery
+
+; This is useful in case the battery never reports 100% charge
+full-at = 99
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = ADP1
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 5
+
+; see "man date" for details on how to format the time string
+; NOTE: if you want to use syntax tags here you need to use %%{...}
+; Default: %H:%M:%S
+time-format = %H:%M
+
+; Available tags:
+;   <label-charging> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+;   <animation-charging>
+format-charging = <animation-charging> <label-charging>
+
+; Available tags:
+;   <label-discharging> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+format-discharging = <ramp-capacity> <label-discharging>
+
+; Available tags:
+;   <label-full> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+;format-full = <ramp-capacity> <label-full>
+
+; Available tokens:
+;   %percentage% (default)
+;   %time%
+;   %consumption% (shows current charge rate in watts)
+label-charging = %percentage%%
+
+; Available tokens:
+;   %percentage% (default)
+;   %time%
+;   %consumption% (shows current discharge rate in watts)
+label-discharging = Discharging %percentage%%
+
+; Available tokens:
+;   %percentage% (default)
+label-full =  %percentage%% 
+
+; Only applies if <ramp-capacity> is used
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+; Only applies if <bar-capacity> is used
+bar-capacity-width = 10
+
+; Only applies if <animation-charging> is used
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+; Framerate in milliseconds
+animation-charging-framerate = 750
+
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
@@ -564,7 +751,7 @@ ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
-[module/powermenu]
+[module/oldpowermenu]
 type = custom/menu
 
 expand-right = true
@@ -592,6 +779,68 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/powermenu]
+type = custom/menu
+
+format-spacing = 1
+
+;label-active = %token%
+
+;label-active-font = 3
+
+label-open = 
+;label-open-foreground = ${colors.secondary}
+label-open-foreground = ${colors.foreground}
+label-close = 
+label-close-foreground = ${colors.foreground}
+label-separator =|
+label-separator-foreground = ${colors.background}
+
+menu-0-0 = 
+menu-0-0-exec = menu-open-1
+menu-0-1 = 
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = 
+menu-1-0-exec = menu-open-0
+menu-1-1 =  
+menu-1-1-exec = reboot
+
+menu-2-0 = 
+menu-2-0-exec = shutdown -h now
+menu-2-1 = 
+menu-2-1-exec = menu-open-0
+
+[module/scriptdate]
+type = custom/script
+
+exec = date +' %I:%M%p'
+;exec = date +'%d %b %Y %I:%M%p'
+
+format-prefix = 
+format-prefix-foreground = #9A9B9A
+;format-prefix-foreground = ${colors.background}
+;format-underline = #B6C0D2
+format-underline = ${colors.foreground}
+content-foreground = ${colors.white}
+content-background = ${colors.magenta}
+
+tail = false
+
+interval = 5
+
+click-left = /home/claudio/.config/polybar/popus/calendar/pop_cal
+
+[module/pavolume]
+type = custom/script
+tail = true
+label = %output%
+exec = ~/.config/polybar/pavolume.sh --listen
+click-right = exec urxvt -name pulsemixer -e pulsemixer
+click-left = ~/.config/polybar/pavolume.sh --togmute
+scroll-up = ~/.config/polybar/pavolume.sh --up
+scroll-down = ~/.config/polybar/pavolume.sh --down
 
 [settings]
 screenchange-reload = true
